@@ -18,7 +18,7 @@ class ExpenseTracker:
         self.root.title("Expense Tracker")
         self.root.geometry("1100x700")
 
-        # Connect to our SQLite database (creates file if missing)
+        # Connect to our SQLite database 
         self.conn = sqlite3.connect("expenses.db")
         self.cursor = self.conn.cursor()
 
